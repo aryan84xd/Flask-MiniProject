@@ -1,0 +1,217 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/029/591/261/small_2x/two-happy-smiling-dogs-isolated-on-yellow-background-horizontal-panoramic-banner-template-with-copy-space-adorable-pet-portraits-illustration-ai-generative-photo.jpeg);
+  background-size: cover;
+  color: #333;
+  background-size: 100vw 100vh;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+}
+
+.Navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: #fff;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  /* padding: 0px 20px; */
+}
+
+.Navbar div {
+  padding: 0px 30px;
+}
+
+.Navbar ul {
+  display: flex;
+  list-style: none;
+  /* margin-left: 20px; */
+}
+
+.Navbar ul li {
+  margin: 0px 12px;
+  font-weight: bolder;
+  align-items: center;
+
+
+}
+
+.Navbar img {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 30px;
+  margin-left: 20px;
+}
+
+.LogButn {
+  background-color: #000;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  /* Add a subtle text shadow for better visibility */
+  font-size: 3rem;
+}
+
+.title {
+  color: #000000;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  /* Add a subtle text shadow for better visibility */
+  font-size: 5rem;
+}
+
+.dog-form {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgba(0, 0, 0);  */
+  /* Semi-transparent white background */
+  padding: 30px;
+  width: 400px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 20px;  */
+  align-items: center;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 3px solid rgb(255, 255, 255);
+
+}
+
+.bgimg {
+
+  background-color: #000;
+  opacity: 80%;
+  margin-bottom: 150px;
+  border-radius: 15px;
+}
+
+input {
+  width: 272px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  margin: 5px 5px;
+  background-color: white;
+  opacity: 50%;
+  text-align: start;
+  min-width: 250px;
+  font-size: 1rem;
+  border: 2px solid rgb(0, 0, 0);
+  color: #000;
+  border-radius: 20px;
+}
+
+.input {
+  width: 272px;
+  height: 45px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  margin: 5px 5px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: start;
+  min-width: 250px;
+  font-size: 2rem;
+  border: 2px solid white;
+
+
+}
+
+.SearchBar {
+  background-color: #d2d1d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60rem;
+  border-radius: 20px;
+  opacity: 80%;
+
+}
+
+.SearchBar h1 {
+  color: rgb(255, 208, 0);
+  margin-bottom: 10px;
+  padding: 0px 0px;
+}
+
+h2 {
+  color: black;
+  margin-bottom: 30px;
+}
+
+button {
+  width: 17rem;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.dog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dog-card {
+  /* Semi-transparent white background */
+  background-color: rgba(255, 255, 255, 0.9);
+
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Hide overflowing content */
+
+
+}
+
+.dog-card img {
+  width: 100%;
+  height: auto;
+  /* Allow the height to adjust proportionally to the width */
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 767px) {
+  .dog-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .dog-card {
+    width: 100%;
+  }
+}
